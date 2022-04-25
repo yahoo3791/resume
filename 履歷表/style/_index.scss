@@ -1,0 +1,45 @@
+.border-b{
+    border-bottom: 1px solid black;
+}
+.h1{
+    font-family: $main-font;
+    font-weight: bold;
+  }
+.h2{
+    font-family: $secondary-font;
+  }
+p{
+  font-family: $Arial-700;
+}
+.QR-code_size{
+    width: 100px;
+    height: 100px;
+}
+.model-size{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.circle{
+  border-radius: 50%;
+}
+p,a{
+  line-height: 200%;
+}
+.home{
+  position:fixed;
+  right: 2%;
+  bottom: 5%;
+}
+.home-size{
+  width: 35px;
+  height: 35px;
+  z-index: 1000;
+}
+.footer{
+  background-color: rgba(220,220,220,0.5);
+}
+.footer_p{
+  font-size: 0.5rem;
+  color: black;
+}

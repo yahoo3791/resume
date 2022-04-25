@@ -1,0 +1,41 @@
+// RWD
+@mixin sm {
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+}
+@mixin md {
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+}
+@mixin lg {
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+}
+@mixin xl {
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+}
+@mixin xxl {
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+}
+@mixin max-xs{
+  @media (max-width:375px) {
+    @content;
+  }
+}

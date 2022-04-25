@@ -1,0 +1,126 @@
+// 排版 容器 間隔 display & flexbox
+.w-100 {
+  width: 100%;
+}
+.w-80 {
+  width: 80%;
+}
+.CONTACT_container{
+  @include max-xs{
+    width: 100%;
+  }
+}
+.container-fluid {
+  width: 80%;
+  margin: 0 auto;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+.m-auto {
+  margin: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+.pr-65 {
+  padding-right: 65px;
+}
+.pt-50vh {
+  padding-top: 50vh;
+}
+.pb-20vh {
+  padding-bottom: 20vh;
+}
+.d-i {
+  display: inline;
+}
+.d-ib {
+  display: inline-block;
+}
+.d-b {
+  display: block;
+}
+.d-g {
+  display: grid;
+}
+.d-t {
+  display: table;
+}
+.d-t-r {
+  display: table-row;
+}
+.d-t-c {
+  display: table-cell;
+}
+.d-f {
+  display: flex;
+}
+.d-i-f {
+  display: inline-flex;
+}
+.d-n {
+  display: none;
+}
+.j-start {
+  justify-content: flex-start;
+}
+.j-end {
+  justify-content: flex-end;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.fw-w {
+  flex-wrap: wrap;
+}
+.f-start {
+  float: left;
+}
+.f-end {
+  float: right;
+}
+.f-none {
+  float: none;
+}
+.clearfix {
+  clear: both;
+}
+.ta-c {
+  text-align: center;
+}
+.fz-1_5rem {
+  font-size: 1.5rem;
+}

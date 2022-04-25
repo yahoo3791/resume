@@ -1,0 +1,387 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+@media (max-width: 375px) {
+  .CONTACT_container {
+    width: 100%;
+  }
+}
+
+.container-fluid {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pr-65 {
+  padding-right: 65px;
+}
+
+.pt-50vh {
+  padding-top: 50vh;
+}
+
+.pb-20vh {
+  padding-bottom: 20vh;
+}
+
+.d-i {
+  display: inline;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-g {
+  display: -ms-grid;
+  display: grid;
+}
+
+.d-t {
+  display: table;
+}
+
+.d-t-r {
+  display: table-row;
+}
+
+.d-t-c {
+  display: table-cell;
+}
+
+.d-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-i-f {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.d-n {
+  display: none;
+}
+
+.j-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.j-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jcsa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fw-w {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.f-start {
+  float: left;
+}
+
+.f-end {
+  float: right;
+}
+
+.f-none {
+  float: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.fz-1_5rem {
+  font-size: 1.5rem;
+}
+
+.border-b {
+  border-bottom: 1px solid black;
+}
+
+.h1 {
+  font-family: "微軟正黑體";
+  font-weight: bold;
+}
+
+.h2 {
+  font-family: "微軟正黑體 Regular";
+}
+
+p {
+  font-family: "Arial 700";
+}
+
+.QR-code_size {
+  width: 100px;
+  height: 100px;
+}
+
+.model-size {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+p, a {
+  line-height: 200%;
+}
+
+.home {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+}
+
+.home-size {
+  width: 35px;
+  height: 35px;
+  z-index: 1000;
+}
+
+.footer {
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+.footer_p {
+  font-size: 0.5rem;
+  color: black;
+}
+/*# sourceMappingURL=all.css.map */

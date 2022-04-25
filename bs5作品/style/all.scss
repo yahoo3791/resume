@@ -1,0 +1,64 @@
+@import "reset";
+@import "about";
+// START variable
+$primary-color:#7c7c7c;
+$footer-color:#4f4c4c;
+.bgc-primary{
+    background-color: $primary-color;
+}
+.bgc-footer{
+    background-color: $footer-color;
+}
+// END variable
+
+// START label element
+body{
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.1),rgba(218, 207, 207, 0.79));
+}
+// END label element
+
+
+// START component
+.btn{
+    padding: 12px 80px;
+    background-color: #434343;
+    border-radius: 50px;
+    letter-spacing: 5px;
+}
+.right-circle{
+    border-radius: 0 50px 50px 0;
+}
+// END component
+
+// START theme
+.tb-rl{
+    writing-mode: tb-rl;
+}
+.b{
+    border: 1px solid black;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.pt-60{
+    padding-top: 60px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+.ps-110{
+    padding-left: 110px;
+}
+.pe-110{
+    padding-right: 110px;
+}
+.c{
+    margin-top: -200px;
+}
+.vh100{
+    height: 100vh;
+}
+// END theme
