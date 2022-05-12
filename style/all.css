@@ -805,6 +805,12 @@ html {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .skill {
+    padding: 40px 0;
+  }
+}
+
 .skill_h1,
 .skill_p,
 .experience_h1,
@@ -1234,13 +1240,23 @@ html {
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
 }
 
+.work_card::after {
+  content: "";
+  -webkit-box-shadow: 0px 50px 50px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 50px 50px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 .work_card {
   position: relative;
   border: 5px solid black;
-  outline: 1px solid white;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0 1px #fff;
+          box-shadow: 0 0 0 1px #fff;
 }
 
 .work_card:hover .work_card_mask {
