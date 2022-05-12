@@ -1,4 +1,7 @@
 // content 文字排版 圖片 圖片區塊 套用變數
+html{
+  color:white;
+}
 .bg {
   background-image: url(../image/pexels-min-an-689326.jpg);
   background-repeat: no-repeat;
@@ -34,25 +37,10 @@
 .clear-fix {
   clear: both;
 }
-.nav {
-  float: left;
-}
-.nav a {
-  padding: 24px;
-  display: block;
-}
-.icon {
-  opacity: 0.9;
-}
-.hover-rotate{
-  &:hover{
-    transform:rotateY(180deg);
-  }
-}
 .hover-bg{
   transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s;
   &:hover{
-    background: #fff;
+    background: #3cbbaa;
     color: black;
   }
 }
@@ -162,6 +150,8 @@
   color: $secondary-color;
 }
 .heading {
+  display: flex;
+  justify-content: center;
   font-family: $Arial-black;
   color: white;
   font-size: 2.5rem;
@@ -174,19 +164,25 @@
     font-size: 1.5rem;
   }
 }
+.b{
+  border:1px solid black;
+}
 .heading_bg {
+  border: 1px solid black;
+  // float: right;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
+  // left: 50%;
+  // transform: translate(-50%);
   top: 80px;
   background-image: url(../image/model.png);
   background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: top 50% right 20px;
+  // background-size: 200px;
+  // background-position: top 50% right 20px;
   width: 100%;
   height: 100%;
   max-width: 800px;
   z-index: -1;
+  clear: both;
   @include xs{
     background-position:top 45% right 5%;
     background-size: 100px;
@@ -196,11 +192,16 @@
     background-size: 150px;
   }
 }
-
+.head_model{
+  width: 30%;
+  vertical-align: bottom;
+  float: right;
+  object-position: right bottom;
+}
 .btn {
   display: inline-block;
-  width: 100px;
   height: 30px;
+  padding: 0px 20px;
   line-height: 30px;
   text-align: center;
   vertical-align: middle;
@@ -217,6 +218,9 @@
   transition: .3s;
   &:hover{
     background: $primary-color;
+    a{
+      color:#3cbbaa;
+    }
   }
 }
 .icon_contact {
@@ -238,6 +242,9 @@
   margin: auto;
   width: 35px;
   height: 35px;
+}
+.about_content_p{
+  color:$white;
 }
 .about_content_p,
 .about_content_from,
@@ -262,14 +269,13 @@
     font-size: 1rem;
   }
 }
-.from_color {
-  color: $light-blue;
-}
+
 .arrow-up {
   position: fixed;
   right: 2%;
   bottom: 5%;
   z-index: 10;
+  display: none;
 }
 .arrow-up_img {
   width: 35px;
@@ -318,46 +324,6 @@
     top:90%;
   }
 }
-.skill-card {
-  padding: 24px;
-  margin: 30px;
-  position: relative;
-  width: 40%;
-  background-color: #fff;
-  box-shadow: 3px 3px 10px gray;
-  border-radius: 5px;
-  @include xs{
-    width: 100%;
-    padding: 14px;
-    margin: 15px;
-  }
-  @include lg{
-    width: 100%;
-    padding: 14px;
-    margin: 15px;
-  }
-  @include xxl{
-    padding: 14px;
-    margin: 15px;
-  }
-}
-.skill-card__inner {
-  padding-left: 30px;
-}
-.skill-card__icon {
-  background-color: #fff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-  box-shadow: 3px 3px 10px gray;
-}
 .icon-size {
   width: 30px;
   height: 30px;
@@ -366,14 +332,20 @@
   color: $white;
 }
 .skill_h1,
+.skill_p,
 .experience_h1,
 .experience_p,
 .work_h1,
 .contact_h1,
-.footer-p {
+.footer-p,
+.contact_card_h2
+{
   font-family: $main-font;
   font-weight: bold;
-
+}
+.skill_card_p{
+  color:gray;
+  padding: 2rem;
 }
 .timeline-center {
   width: 3px;
@@ -430,7 +402,6 @@
   width: 16px;
   height: 16px;
   background-color: #fff;
-  border-radius: 50%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -529,39 +500,6 @@
 .work {
   position: relative;
 }
-.leaf-right {
-  background-image: url("../image/leaf.png");
-  background-size: cover;
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  right: 0;
-  top: 20px;
-  opacity: 0.8;
-  z-index: -100;
-  @include xs {
-    display: none;
-  }
-  @include md {
-    display: none;
-  }
-}
-.leaf-left {
-  background-image: url("../image/leaf2.png");
-  background-size: cover;
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  z-index: -100;
-  @include xs{
-    display: none;
-  }
-  @include lg{
-    display: none;
-  }
-}
 .line-QRCODE_img {
   width: 100px;
   height: 100px;
@@ -580,4 +518,135 @@
   @include xs{
     display: block;
   }
+}
+.box{
+  width: 40%;
+}
+.box2{
+  width: 40%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.box2 img {
+  object-position: right bottom;
+}
+.skill_card{
+  line-height: 2rem;
+  width: 250px;
+  padding: 30px 0px 0px 0px;
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 20px 15px;
+  overflow: hidden;
+  position: relative;
+  &:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    transform: translateY(-5px);
+  }
+}
+.skill_card_footer{
+  background-color: #fff;
+  height: 100%;
+}
+.skill_logo{
+  text-align: center;
+}
+.skill_inner{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0,0,0,0.4) 2px 2px 5px 0px,
+  rgba(0,0,0,0.2) 2px 2px 5px 0px inset;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+.skill_h2{
+  padding: 10px 0 5px 0;
+  text-align: center;
+}
+.t-shadow{
+  text-shadow: 0.1em 0.1em gray;
+}
+.contact_card{
+  width: 50%;
+  margin: 0 auto;
+  background-color: gray;
+  border-radius:5px;
+  box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
+  line-height: 2rem;
+  padding-top: 80px;
+  position: relative;
+  &:hover{
+    transition: all .5s;
+    transform: translateY(-5px);
+  }
+}
+.contact_card_model{
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  top:-50px;
+  left: 50%;
+  transform: translate(-50%,0%);
+  padding: 10px;
+}
+.contact_footer{
+  background-color: white;
+  color:gray;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+}
+.contact_card_inner {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 30px 5px;
+  &:hover{
+    background-color: #c0c0c0;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
+
+  }
+}
+.work_card{
+  position: relative;
+  border: 5px solid black;
+  outline: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.3);
+
+  &:hover .work_card_mask{
+    opacity: 1;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+  }
+}
+.work_card img{
+  border-radius: 5px;
+}
+.work_card_mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(101, 101, 101, 0.6);
+  color: #ffffff;
+  opacity: 0;
+}
+.va-b{
+  vertical-align: bottom;
 }

@@ -23,8 +23,9 @@
   }
   
 }
+
 .m-auto {
-  margin: auto;
+  margin: 0 auto;
 }
 .ml-auto {
   margin-left: auto;
@@ -47,7 +48,12 @@
 .pt-80 {
   padding-top: 80px;
 }
-
+.pt-130{
+  padding-top: 130px;
+}
+.pt-20{
+  padding-top: 20%;
+}
 .pb-15 {
   padding-bottom: 15px;
 }
@@ -109,6 +115,12 @@
 .jcsa {
   justify-content: space-around;
 }
+.jcc{
+  justify-content: center;
+}
+.ai-c{
+  align-items: center;
+}
 .fw-w {
   flex-wrap: wrap;
 }
@@ -129,4 +141,7 @@
 }
 .fz-1_5rem {
   font-size: 1.5rem;
+}
+.fz-14{
+  font-size: 14px;
 }
