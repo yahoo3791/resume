@@ -1261,6 +1261,7 @@ html {
 
 .work_card:hover .work_card_mask {
   opacity: 1;
+  background: rgba(101, 101, 101, 0.6);
   -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
@@ -1275,7 +1276,6 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(101, 101, 101, 0.6);
   color: #ffffff;
   opacity: 0;
 }
