@@ -1,5 +1,11 @@
+body{
+  position: relative;
+}
 .border-b{
     border-bottom: 1px solid black;
+}
+.b{
+  border:5px solid black;
 }
 .h1{
     font-family: $main-font;
@@ -15,31 +21,68 @@ p{
     width: 100px;
     height: 100px;
 }
-.model-size{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
 .circle{
   border-radius: 50%;
 }
 p,a{
   line-height: 200%;
 }
-.home{
-  position:fixed;
-  right: 2%;
-  bottom: 5%;
-}
-.home-size{
-  width: 35px;
-  height: 35px;
-  z-index: 1000;
-}
+// .home{
+//   position:fixed;
+//   right: 2%;
+//   bottom: 5%;
+// }
+// .home-size{
+//   width: 35px;
+//   height: 35px;
+//   z-index: 1000;
+// }
 .footer{
   background-color: rgba(220,220,220,0.5);
 }
 .footer_p{
   font-size: 0.5rem;
   color: black;
+}
+.resume_card{
+  background:rgba(#B6E7D5,0.2);
+  width: 80%;
+  height: 500px;
+  overflow-y:auto;
+  box-shadow: 30px 30px 5px  rgba(0, 0, 0, 0.2);
+}
+.wrapper{
+  height: 100vh;
+}
+.h-100vh{
+  height: 100vh;
+}
+.list-group{
+  // width: 20%;
+  margin-right: 20px;
+}
+.scrollspy-example{
+  width: 70%;
+  height:  100%;
+  overflow-y: auto;
+}
+body{
+  position: relative;
+}
+.photo_stickers{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.photo_stickers_img{
+  width: 150px;
+  border-radius: 50%;
+}
+.profile{
+  padding-top: 20px;
+}
+.vh70{
+  height: 70vh;
+}
+.pt-130{
+  padding-top: 130px;
 }

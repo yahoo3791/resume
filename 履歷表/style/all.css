@@ -298,6 +298,18 @@ html {
       justify-content: space-around;
 }
 
+.jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .fw-w {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -327,8 +339,16 @@ html {
   font-size: 1.5rem;
 }
 
+body {
+  position: relative;
+}
+
 .border-b {
   border-bottom: 1px solid black;
+}
+
+.b {
+  border: 5px solid black;
 }
 
 .h1 {
@@ -349,31 +369,12 @@ p {
   height: 100px;
 }
 
-.model-size {
-  width: 150px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .circle {
   border-radius: 50%;
 }
 
 p, a {
   line-height: 200%;
-}
-
-.home {
-  position: fixed;
-  right: 2%;
-  bottom: 5%;
-}
-
-.home-size {
-  width: 35px;
-  height: 35px;
-  z-index: 1000;
 }
 
 .footer {
@@ -383,5 +384,58 @@ p, a {
 .footer_p {
   font-size: 0.5rem;
   color: black;
+}
+
+.resume_card {
+  background: rgba(182, 231, 213, 0.2);
+  width: 80%;
+  height: 500px;
+  overflow-y: auto;
+  -webkit-box-shadow: 30px 30px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 30px 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.list-group {
+  margin-right: 20px;
+}
+
+.scrollspy-example {
+  width: 70%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+body {
+  position: relative;
+}
+
+.photo_stickers {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.photo_stickers_img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.profile {
+  padding-top: 20px;
+}
+
+.vh70 {
+  height: 70vh;
+}
+
+.pt-130 {
+  padding-top: 130px;
 }
 /*# sourceMappingURL=all.css.map */
