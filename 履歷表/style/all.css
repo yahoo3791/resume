@@ -339,6 +339,16 @@ html {
   font-size: 1.5rem;
 }
 
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
 body {
   position: relative;
 }
@@ -407,6 +417,18 @@ p, a {
   margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+  .list-group {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-group a {
+    font-size: 14px;
+  }
+}
+
 .scrollspy-example {
   width: 70%;
   height: 100%;
@@ -420,11 +442,25 @@ body {
 .photo_stickers {
   margin: 0 auto;
   padding: 30px 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .photo_stickers {
+    padding: 15px 0;
+  }
 }
 
 .photo_stickers_img {
   width: 150px;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .photo_stickers_img {
+    width: 100px;
+  }
 }
 
 .profile {
@@ -437,5 +473,11 @@ body {
 
 .pt-130 {
   padding-top: 130px;
+}
+
+@media (max-width: 768px) {
+  .pt-130 {
+    padding-top: 100px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
