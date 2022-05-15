@@ -2,6 +2,18 @@
 .w-100 {
   width: 100%;
 }
+.w-70{
+  width: 70%;
+}
+.vh70{
+  height: 70vh;
+}
+.h-100{
+  height: 100%;
+}
+.vh100{
+  height: 100vh;
+}
 .w-80 {
   width: 80%;
 }
@@ -19,7 +31,7 @@
   margin: 0 auto;
 }
 .m-auto {
-  margin: auto;
+  margin:0 auto;
 }
 .ml-auto {
   margin-left: auto;
@@ -127,6 +139,83 @@
 .ta-c {
   text-align: center;
 }
+.ta-l{
+  text-align: left;
+}
 .fz-1_5rem {
   font-size: 1.5rem;
+}
+.p-f{
+  position: fixed;
+}
+.p-r{
+  position: relative;
+}
+.p-a{
+  position: absolute;
+}
+.top-0{
+  top: 0;
+}
+.left-0{
+  left: 0;
+}
+.top-center{
+  top: 50%;
+}
+.left-center{
+  left: 50%;
+}
+.clear-fix {
+  clear: both;
+}
+.clear-fix:before {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clear-fix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.b{
+  border:1px solid black;
+}
+.border-b{
+  border-bottom: 1px solid black;
+}
+.va-b{
+  vertical-align: bottom;
+}
+.border-r-5{
+  border-radius: 5px;
+}
+.border-r-10{
+  border-radius: 10px;
+}
+.border-circle{
+  border-radius: 50%;
+}
+.overflow-y-auto{
+  overflow-y: auto;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.ptb-30{
+  padding: 30px 0;
+}
+.pt-20{
+  padding-top: 20px;
+}
+.pt-130_pt-md-100{
+  padding-top: 130px;
+  @include max-md{
+    padding-top: 100px;
+  }
 }
