@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -90,7 +91,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,21 +105,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -127,103 +123,24 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 a {
   text-decoration: none;
-  color: black;
+  color:black;
 }
-
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
 
-img {
-  border: 0;
+img{
+  border:0;
   outline: 0;
 }
-
-.box {
-  height: 500px;
-  width: 700px;
-}
-
-.box img {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.banner_content_h2 {
-  font-family: 'Inria Sans', sans-serif;
-}
-
-.banner_content_p,
-.btn_a {
-  font-family: 'Inter', sans-serif;
-}
-
-.font-Inter {
-  font-family: 'Inter', sans-serif;
-}
-
-.bgc-primary {
-  background-color: #313549;
-}
-
-.bg-gray {
-  background-color: rgba(192, 192, 192, 0.8);
-}
-
-.font-white {
-  color: white;
-}
-
-.btn {
-  font-weight: bold;
-}
-
-.box-shadow-black {
-  -webkit-box-shadow: 3px 3px 9px black;
-          box-shadow: 3px 3px 9px black;
-}
-
-.btn_a {
-  padding: 20px 10px;
-}
-
-.bgc-footer {
-  background-color: #313030;
-}
-
-.grayCircle {
-  width: 25px;
-  height: 25px;
-  background-color: gray;
-  border-radius: 50%;
-  line-height: 25px;
-  display: inline-block;
-  text-align: center;
-  color: #313030;
-}
-
-.recommend {
-  width: 40px;
-  height: 25px;
-  background-color: red;
-  color: black;
-  opacity: 0.8;
-  display: inline-block;
-  line-height: 25px;
-}
-/*# sourceMappingURL=all.css.map */
