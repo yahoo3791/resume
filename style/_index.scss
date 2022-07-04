@@ -9,22 +9,8 @@ html{
   background-position: center;
   z-index: -3;
 }
-.bg::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $gray;
-  opacity: 0.2;
-  z-index: -5;
-}
-.header {
+.z-100{
   z-index: 100;
-@include xs{
-  width: 100%;
- }
 }
 .menu-toggler {
   padding: 24px;
@@ -34,7 +20,7 @@ html{
   width: 32px;
   height: 2px;
   margin-bottom: 8px;
-  background-color: white;
+  background-color:white;
 }
 .menu-toggler:hover span:nth-child(1) {
   transform: translateX(-20%);
@@ -43,16 +29,11 @@ html{
   transform: translateX(20%);
 }
 .popup-menu {
-  background-color: $gray;
+  background-color: gray;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
   z-index: 10000000;
-}
-.popup_xs{
-  @include xs{
-    width: 100%;
-  }
 }
 #popup-overlay:target {
   opacity: 1;
@@ -67,13 +48,10 @@ html{
 .popup-menu_close:hover {
   transform: rotate(180deg);
 }
-.popup-menu_close:hover span {
-  background-color: $secondary-color;
-}
 .popup-menu_close span {
   width: 34px;
   height: 2px;
-  background-color: white;
+  background-color:white;
 }
 .popup-menu_close span:nth-child(1) {
   transform: translate(-50%, -50%) rotate(-45deg);
@@ -83,57 +61,20 @@ html{
 }
 .popup-menu-item {
   font-size: 2.5rem;
-  font-family: $main-font;
   font-weight: bold;
   line-height: 200%;
   transition: all 0.3s;
-  color: white;
-  @include md{
-    font-size: 1.5rem;
-  }
-}
-.popup-menu-item:hover {
-  color: $secondary-color;
-}
-.heading {
-  font-family: $Arial-black;
-  color: white;
-  font-size: 2.5rem;
-  line-height: 200%;
-  @include xs{
-    font-size: 1.5rem;
-  }
-  @include lg{
-    font-size: 1.5rem;
-  }
-}
-.about,
-.work {
-  background-color: rgba(0,0,0,0.1);
-  z-index: 1;
+  color:white;
 }
 .about_content_p,
 .about_content_from,
 .work_content,
 .contact_content {
-  font-family: $main-font;
   font-weight: bold;
   line-height: 200%;
-  @include xs{
-    font-size: 0.9rem;
-  }
-  @include lg{
-    font-size: 0.9rem;
-  }
 }
 .work_h2{
   font-size: 1.2rem;
-  @include xs{
-    font-size: 1rem;
-  }
-  @include lg{
-    font-size: 1rem;
-  }
 }
 .arrow-up {
   right: 2%;
@@ -148,77 +89,27 @@ html{
   width: 30px;
   height: 30px;
 }
-.t-color {
-  color: $white;
-}
-.skill{
-  @include md{
-    padding: 40px 0;
-  }
-}
-.skill_h1,
-.skill_p,
-.experience_h1,
-.experience_p,
-.work_h1,
-.contact_h1,
-.footer-p,
-.contact_card_h2
-{
-  font-family: $main-font;
-  font-weight: bold;
-}
 .skill_card_p{
-  color:$gray;
+  color:gray;
   padding: 2rem;
 }
 .timeline-center {
   width: 3px;
-  background-color: $white;
+  background-color: white;
   transform: translateX(-50%);
   box-shadow: 3px 3px 10px gray;
-  @include xs{
-    left: 5%;
-  }
-  @include lg{
-    left: 5%;
-  }
 }
 .timeline-card {
   width: calc(50% - 24px);
   height: 150px;
-  background-color: $white;
+  background-color: white;
   box-shadow: 3px 3px 10px black;
-  @include xs{
-    width: 300px;
-  }
-  @include lg{
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-.right {
-  @include xs{
-    padding: 30px;
-  }
-  @include lg{
-    padding: 30px;
-  }
-}
-.left {
-  padding: 30px;
-  @include xs{
-    justify-content: flex-end;
-  }
-  @include lg{
-    justify-content: flex-end;
-  }
 }
 .timeline-card::before {
   content: "";
   width: 16px;
   height: 16px;
-  background-color: $white;
+  background-color:white;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -226,54 +117,16 @@ html{
 }
 .timeline-cards:nth-child(even) > ::before {
   right: -33px;
-  @include xs{
-    left: -35px;
-  }
-  @include sm{
-    left: -35px;
-  }
-  @include lg{
-    left: -35px;
-  }
 }
 .timeline-cards:nth-child(odd) > ::before {
   left: -33px;
 
-  @include xs{
-    left: -35px;
-  }
-  @include sm{
-    left: -35px;
-  }
-  @include lg{
-    left: -35px;
-  }
-}
-.timeline-group {
-  @include xs{
-    width: 100%;
-  }
-  @include lg{
-    width: 100%;
-  }
-  @include xl{
-    width: 100%;
-  }
-}
-.work-container {
-  margin: auto;
-  @include xs{
-    width: 90%;
-  }
-  @include lg{
-    width: 90%;
-  }
 }
 .skill_card{
   line-height: 2rem;
-  width: 250px;
+  height: 300px;
   padding: 30px 0px 0px 0px;
-  background-color: $gray;
+  background-color: gray;
   box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
   margin: 20px 15px;
   overflow: hidden;
@@ -283,7 +136,7 @@ html{
   }
 }
 .skill_card_footer{
-  background-color: $white;
+  background-color:white;
 }
 .skill_h2{
   padding: 10px 0 5px 0;
@@ -292,7 +145,7 @@ html{
   text-shadow: 0.1em 0.1em gray;
 }
 .contact_card{
-  background-color: $gray;
+  background-color: gray;
   box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
   line-height: 2rem;
   &:hover{
@@ -302,7 +155,7 @@ html{
 }
 .contact_card_model{
   border: 2px solid white;
-  background-color: $gray;
+  background-color: gray;
   width: 100px;
   height: 100px;
   overflow: hidden;
@@ -311,7 +164,7 @@ html{
   padding: 10px;
 }
 .contact_card_inner {
-  background-color: $white;
+  background-color: white;
   width: 30px;
   height: 30px;
   margin: 30px 5px;
@@ -322,8 +175,8 @@ html{
   }
 }
 .contact_footer{
-  background-color: white;
-  color:$gray;
+  background-color:white;
+  color:gray;
   padding: 10px;
   border-radius: 0 0 5px 5px;
 }
@@ -347,8 +200,9 @@ html{
   left: 0;
 }
 .work_card_mask{
-  // background: rgba(101, 101, 101, 0.6);
-  // 如果把rgba寫在這不是hover會被擋到 無法使用a
-  color: $white;
+  color:white;
   opacity: 0;
+}
+.pt-80{
+  padding-top: 80px;
 }

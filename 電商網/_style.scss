@@ -83,3 +83,32 @@ a{
 .btn:hover a{
     color:white;
 }
+.navbar-nav a:hover{
+    color:black;
+}
+.navName:hover{ 
+    border-bottom: 1px solid black;
+}
+.recommend_close{
+    width: 15px;
+    height: 15px;
+    display: block;
+    position:absolute;
+    overflow: hidden;
+    top: 0;
+}
+.recommend_close span{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background-color: gray;
+}
+.recommend_close span:nth-child(1){
+    transform: rotate(45deg);
+    top: 50%;
+}
+.recommend_close span:nth-child(2){
+    transform:rotate(-45deg);
+    top: 50%;
+}

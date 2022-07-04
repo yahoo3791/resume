@@ -136,6 +136,6 @@ a {
 *::before {
   box-sizing: border-box;
 }
-// html {
-//   scroll-behavior: smooth;
-// }
+p{
+  margin-bottom: 0 !important;
+}
