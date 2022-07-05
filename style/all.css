@@ -153,16 +153,32 @@ html {
   color: white;
 }
 
+.z-100 {
+  z-index: 100;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.work_card_mask {
+  opacity: 0;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
 .bg {
   background-image: url(../image/pexels-min-an-689326.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -3;
-}
-
-.z-100 {
-  z-index: 100;
 }
 
 .menu-toggler {
@@ -188,9 +204,8 @@ html {
 }
 
 .popup-menu {
-  background-color: gray;
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 10000000;
@@ -217,7 +232,6 @@ html {
 .popup-menu_close span {
   width: 34px;
   height: 2px;
-  background-color: white;
 }
 
 .popup-menu_close span:nth-child(1) {
@@ -232,23 +246,14 @@ html {
 
 .popup-menu-item {
   font-size: 2.5rem;
-  font-weight: bold;
   line-height: 200%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: white;
+  text-decoration: none;
 }
 
-.about_content_p,
-.about_content_from,
-.work_content,
-.contact_content {
-  font-weight: bold;
-  line-height: 200%;
-}
-
-.work_h2 {
-  font-size: 1.2rem;
+.popup-menu-item:hover {
+  color: black !important;
 }
 
 .arrow-up {
@@ -267,14 +272,8 @@ html {
   height: 30px;
 }
 
-.skill_card_p {
-  color: gray;
-  padding: 2rem;
-}
-
 .timeline-center {
   width: 3px;
-  background-color: white;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-box-shadow: 3px 3px 10px gray;
@@ -284,7 +283,6 @@ html {
 .timeline-card {
   width: calc(50% - 24px);
   height: 150px;
-  background-color: white;
   -webkit-box-shadow: 3px 3px 10px black;
           box-shadow: 3px 3px 10px black;
 }
@@ -314,11 +312,9 @@ html {
   line-height: 2rem;
   height: 300px;
   padding: 30px 0px 0px 0px;
-  background-color: gray;
   -webkit-box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
   margin: 20px 15px;
-  overflow: hidden;
 }
 
 .skill_card:hover {
@@ -326,10 +322,6 @@ html {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-}
-
-.skill_card_footer {
-  background-color: white;
 }
 
 .skill_h2 {
@@ -341,7 +333,6 @@ html {
 }
 
 .contact_card {
-  background-color: gray;
   -webkit-box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 5px 15px 5px 0 rgba(0, 0, 0, 0.1);
   line-height: 2rem;
@@ -356,10 +347,8 @@ html {
 
 .contact_card_model {
   border: 2px solid white;
-  background-color: gray;
   width: 100px;
   height: 100px;
-  overflow: hidden;
   top: -50px;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
@@ -367,7 +356,6 @@ html {
 }
 
 .contact_card_inner {
-  background-color: white;
   width: 30px;
   height: 30px;
   margin: 30px 5px;
@@ -380,10 +368,7 @@ html {
 }
 
 .contact_footer {
-  background-color: white;
-  color: gray;
   padding: 10px;
-  border-radius: 0 0 5px 5px;
 }
 
 .work_card {
@@ -408,14 +393,5 @@ html {
   height: 100%;
   top: 0;
   left: 0;
-}
-
-.work_card_mask {
-  color: white;
-  opacity: 0;
-}
-
-.pt-80 {
-  padding-top: 80px;
 }
 /*# sourceMappingURL=all.css.map */
