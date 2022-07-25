@@ -123,3 +123,13 @@ a{
 .overflow-scroll-y{
     overflow-y: scroll;
 }
+.item a:hover{
+    border-bottom: 1px solid white;
+}
+.item a:hover p{
+    color:white !important;
+}
+.social_contact a:hover{
+    background-color:white;
+    color:black;
+}
